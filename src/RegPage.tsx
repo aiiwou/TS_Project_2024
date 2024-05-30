@@ -38,7 +38,9 @@ const RegPage: FC = () => {
 
 
     const sendRegistrationPost = (post: registrationItem) => {
-        axios.post('https://reqres.in/api/register', post)
+        const isntEmpty = Object.values({...newUser, avatar: "заглушка"}).every(el => !!el)
+        if (isntEmpty) {
+            axios.post('https://reqres.in/api/register', post)
             .then(res => {
                 if (res.status == 200) {
                     postUser({...newUser})
@@ -49,8 +51,12 @@ const RegPage: FC = () => {
             })
             .catch(er => {
                 console.error(er)
-                alert('Неверные данные')
+                alert('Неверная почта')
             })
+        } else {
+            alert("Поля не должны быть пустыми")
+        }
+        
     }
 
     const postUser = (user: IUser) => {

@@ -33,7 +33,7 @@ const Modal: FC<modalProps> = (props) => {
 
   const applyChanges = () => {
     
-    const isntEmpty = Object.values({...changedUser, email: "заглушка"}).every(el => !!el)
+    const isntEmpty = Object.values({...changedUser, avatar: "заглушка"}).every(el => !!el)
     if (isntEmpty) {
       patchUser()
       updateRenderedUser(changedUser)
@@ -64,7 +64,7 @@ const Modal: FC<modalProps> = (props) => {
         <input
           className={inputStyles["inputs-search"]}
           onChange={(e) => updateUser('email', e.target.value)}
-          value={changedUser.email} type="text" placeholder='Email' required />
+          value={changedUser.email} type="mail" placeholder='Email' required />
         <input
           className={inputStyles["inputs-search"]}
           onChange={(e) => updateUser('avatar', e.target.value)}
