@@ -1,0 +1,52 @@
+.wrapper {
+    margin-bottom: 33px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    padding: 27px;
+    border-radius: 16px;
+    width: 879px;
+    height: 512px;
+    background: #f2f2f2;
+}
+
+.back-btn {
+    background: none;
+    outline: none;
+    border: none;
+
+    position: absolute;
+    top: 27px;
+    left: 27px;
+    font-size: 32px;
+    font-weight: bold;
+    border-radius: 16px;
+    background-color: #FFDADA;
+    width: 187px;
+    height: 63px;
+}
+
+.add-btn {
+width: 323px;
+height: 76px;
+font-size: 32px;
+}
+
+.user-page__img {
+    margin-bottom: 26px;
+    border-radius: 16px;
+    width: 169px;
+    height: 169px;
+}
+
+.user-page__name {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.user-page__email {
+    font-weight: 300;
+    font-size: 32px;
+}

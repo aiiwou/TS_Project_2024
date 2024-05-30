@@ -1,0 +1,7 @@
+.paginator {
+    margin-bottom: 33px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}

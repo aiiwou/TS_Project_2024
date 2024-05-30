@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Circe';
+    src: local('Circe Regular'), local('Circe-Regular'),
+        url('src\fonts\Circe-Regular.woff') format('woff');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Circe';
+    src: local('Circe Bold'), local('Circe-Bold'),
+        url('src\fonts\Circe-Regular.woff') format('woff');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Circe';
+    src: local('Circe Light'), local('Circe-Light'),
+        url('src\fonts\Circe-Light.woff') format('woff');
+    font-weight: 300;
+}

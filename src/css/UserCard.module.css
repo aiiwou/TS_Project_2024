@@ -1,0 +1,31 @@
+.user-card {
+    width: 300px;
+    height: 360px;
+    padding: 27px 20px;
+    border-radius: var(--border-rad);
+    background-color: var(--grey);
+}
+
+.user-card-img {
+    margin-bottom: 34px;
+    width: 169px;
+    height: 169px;
+    border-radius: var(--border-rad);
+}
+
+.user-card-name {
+    margin-bottom: 7px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.user-card-mail {
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.user-card-btn {
+    padding: 3px 14px;
+    font-weight: 400;
+}

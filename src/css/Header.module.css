@@ -1,0 +1,13 @@
+.header {
+    padding: 0 100px;
+    margin-bottom: 45px;
+    height: 110px;
+    background-color: #FBFBFB;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-btn {
+    font-size: 32px;
+    width: 253px;
+}
