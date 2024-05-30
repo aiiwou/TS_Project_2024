@@ -22,6 +22,7 @@ const Modal: FC<modalProps> = (props) => {
 
 
   const updateUser = (name: keyof IUser, value: string) => {
+  
     setChangedUser({ ...changedUser, [name]: value })
   }
 
@@ -31,9 +32,15 @@ const Modal: FC<modalProps> = (props) => {
   }
 
   const applyChanges = () => {
-    patchUser()
-    updateRenderedUser(changedUser)
-    close()
+    
+    const isntEmpty = Object.values({...changedUser, email: "заглушка"}).every(el => !!el)
+    if (isntEmpty) {
+      patchUser()
+      updateRenderedUser(changedUser)
+      close()
+    } else {
+      alert("Недопустимые значения")
+    }
   }
 
 

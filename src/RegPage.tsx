@@ -49,7 +49,7 @@ const RegPage: FC = () => {
             })
             .catch(er => {
                 console.error(er)
-                alert('Неверная почта')
+                alert('Неверные данные')
             })
     }
 
